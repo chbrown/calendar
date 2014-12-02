@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <title>Calendar Links</title>
+  <link href="static/favicon.ico" rel="icon" type="image/x-icon">
+  <link href="static/site.css" rel="stylesheet" type="text/css">
+  <script src="static/lib/angular.min.js"></script>
+  <script src="static/lib/ngStorage.min.js"></script>
+  <script src="app.js"></script>
+</head>
+<body ng-app="app" ng-controller="calendarCtrl">
+  <main>
+
+    <section>
+      <h1>Event</h1>
+      <label>
+        <h3>Name:</h3>
+        <input ng-model="$storage.text" required
+          placeholder="Event description" style="width: 600px">
+      </label>
+      <label>
+        <h3>Details:</h3>
+        <textarea ng-model="$storage.details"
+          placeholder="Event details" style="width: 600px; height: 100px"></textarea>
+      </label>
+      <label>
+        <h3>Location:</h3>
+        <input ng-model="$storage.location"
+          placeholder="Event location" style="width: 600px">
+      </label>
+      <div>
+        <h3>Start date &amp; time:</h3>
+        <input ng-model="$storage.start_date" required
+          placeholder="YYYYMMDD" title="YYYYMMDD" pattern="^\d{8}$">
+        <input ng-model="$storage.start_time"
+          placeholder="HHMMSS" title="HHMMSS" pattern="^\d{6}Z?$">
+      </div>
+      <div>
+        <h3>End date &amp; time:</h3>
+        <input ng-model="$storage.end_date" required
+          placeholder="YYYYMMDD" title="YYYYMMDD" pattern="^\d{8}$">
+        <input ng-model="$storage.end_time"
+          placeholder="HHMMSS" title="HHMMSS" pattern="^\d{6}Z?$">
+      </div>
+    </section>
+
+    <section>
+      <h1>Links</h1>
+      <div>
+        <h3><a href="{{google_url}}">Google Calendar</a></h3>
+        <div class="box">
+          <code>{{google_url}} </code>
+        </div>
+      </div>
+    </section>
+
+  </main>
+</body>

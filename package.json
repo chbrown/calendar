@@ -1,0 +1,20 @@
+{
+  "name": "calendar",
+  "version": "0.0.1",
+  "description": "Calendar link generation",
+  "homepage": "https://chbrown.github.io/calendar",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/chbrown/calendar.git"
+  },
+  "bugs": {
+    "url": "https://github.com/chbrown/calendar/issues"
+  },
+  "author": "Christopher Brown",
+  "license": "MIT",
+  "staticPattern": "static/lib/{file}",
+  "staticDependencies": {
+    "angular": "*",
+    "ng-storage": "*"
+  }
+}
