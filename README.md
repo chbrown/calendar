@@ -1,4 +1,4 @@
-# [Calendar](https://chbrown.github.io/calendar)
+# [Calendar](https://chbrown.github.io/calendar/)
 
 Current features:
 

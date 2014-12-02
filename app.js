@@ -34,7 +34,7 @@ app.controller('calendarCtrl', function($scope, $http, $localStorage) {
       dates: start_iso8601 + '/' + end_iso8601,
     };
 
-    $scope.google_url = 'http://www.google.com/calendar/event' + encodeQuerystring(query);
+    $scope.google_url = 'https://www.google.com/calendar/event' + encodeQuerystring(query);
   };
 
   $scope.$watchGroup([
